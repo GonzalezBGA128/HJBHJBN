@@ -1,0 +1,225 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header {
+            background-color: #f6d4e6;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            background-image: url(img/header.jpg);
+            background-size: 100%;
+        }
+
+        nav {
+            background-color: rgb(199, 155, 214);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color:white;
+            -webkit-text-stroke: 1.5px purple;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 80px;
+        }
+        h2 {
+            color:hotpink;
+            -webkit-text-stroke: 1.5px purple;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 60px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        footer {
+            background-color: rgb(199, 155, 214);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .dropbtn {
+            background-color:rgb(199, 155, 214);
+            color: purple;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            padding: 0px 0px 0px 50px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px;
+            z-index: 1;
+            font-size: 20px
+        }
+
+        .dropdown-content a {
+            color: purple;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(199, 155, 214);
+            font-size: 22px
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            border: 3px solid purple;
+        }
+        .head2{
+            background-color:rgb(199, 155, 214) ;
+        }
+        /* Estilos de la sección de imágenes */
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cambiamos a 2 columnas */
+    grid-gap: 20px;
+}
+
+.image-container {
+    text-align: center;
+    position: relative; /* Agregamos posicionamiento relativo para alinear elementos secundarios */
+}
+
+.image-container img {
+    max-height: 100%; /* Cambiamos height a max-height para mantener la proporción */
+    max-width: 100%; /* Cambiamos width a max-width para mantener la proporción */
+    object-fit: contain; /* Utilizamos object-fit: contain para que la imagen se ajuste dentro del contenedor */
+    border: 2.75px solid purple;
+    border-radius: 4px;
+    transition: transform 0.3s ease; /* Agregamos transición para suavizar el efecto */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Aplicamos una escala al pasar el mouse por encima */
+}
+
+.image-container p {
+    margin-top: 0; /* Eliminamos el margen superior del párrafo */
+    margin-bottom: 0; /* Eliminamos el margen inferior del párrafo */
+}
+
+.form-control {
+	height: 40px;
+	box-shadow: none;
+	color: #969fa4;
+}
+.form-control:focus {
+	border-color: #5cb85c;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	width: 450px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+}
+.signup-form h2 {
+	color: #636363;
+	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+	content: "";
+	height: 2px;
+	width: 30%;
+	background: #d4d4d4;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}	
+.signup-form h2:before {
+	left: 0;
+    background-color: purple;
+}
+.signup-form h2:after {
+	right: 0;
+    background-color: purple;
+}
+.signup-form .hint-text {
+	color: black;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: pink;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+	outline: none !important;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}    	
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #5cb85c;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}  
